@@ -7,8 +7,8 @@
 class Dictator < Formula
   desc "One registry of Claude Code sessions across every repository"
   homepage "https://github.com/jindrichskupa/dictator"
-  url "https://github.com/jindrichskupa/dictator/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "ff53cb48fcf70c33c621dd97254f26092eea60a987de2846992d9d24ec1b744f"
+  url "https://github.com/jindrichskupa/dictator/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "c879a95f84a3640c65772ae108f1ee2341997ddcccda77918ca7bb7f89287b2a"
   license "MIT"
   head "https://github.com/jindrichskupa/dictator.git", branch: "master"
 
