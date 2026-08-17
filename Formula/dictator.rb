@@ -7,8 +7,8 @@
 class Dictator < Formula
   desc "One registry of Claude Code sessions across every repository"
   homepage "https://github.com/jindrichskupa/dictator"
-  url "https://github.com/jindrichskupa/dictator/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "c879a95f84a3640c65772ae108f1ee2341997ddcccda77918ca7bb7f89287b2a"
+  url "https://github.com/jindrichskupa/dictator/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "58de5d180194c57387ddf5dd7bc26bce4a3ebdf2f11489994deb6357b325b65f"
   license "MIT"
   head "https://github.com/jindrichskupa/dictator.git", branch: "master"
 
@@ -34,7 +34,8 @@ class Dictator < Formula
 
         "UserPromptSubmit": [{ "hooks": [{ "type": "command",
           "command": "#{opt_prefix}/hooks/dict-status.sh running" }] }],
-        "Notification":     [{ "hooks": [{ "type": "command",
+        "Notification":     [{ "matcher": "permission_prompt|agent_needs_input|elicitation_dialog|elicitation_url_dialog",
+          "hooks": [{ "type": "command",
           "command": "#{opt_prefix}/hooks/dict-status.sh waiting" }] }],
         "Stop":             [{ "hooks": [{ "type": "command",
           "command": "#{opt_prefix}/hooks/dict-status.sh done" }] }],
